@@ -1,6 +1,5 @@
 print("Bem Vindo à Calculadora Simples!!!!\n")
 
-
 def calculadora():
     while True:
         print("1. Soma\n"
@@ -42,7 +41,6 @@ def divisao(a=float, b=float):
         return divisao
     else:
         print("Divisão por zero não é permitida.")
-
 
 def em_funcionamento(operacao):
     if operacao == 1:
@@ -93,9 +91,7 @@ def em_funcionamento(operacao):
     elif operacao == 4:
         print(f'Resultado: {divisao(num1, num2)}\n')
 
-
 print("====Bem Vindo ao Conversor de Temperatura!====\n")
-
 
 def conversor_temperatura():
     while True:
@@ -121,7 +117,6 @@ def conversor_temperatura():
             print("Opção inválida. Tente novamente.")
             conversor_temperatura()
 
-
 def C_F():
     graus = (input("Digite a temperatura em Celsius: "))
     try:
@@ -132,7 +127,6 @@ def C_F():
     Fahrenheit = (graus * 1.8) + 32
     return print(f'{graus} Graus Celsius em Fahrenheit é: {Fahrenheit} Graus Gahrenheit.')
 
-
 def F_C():
     graus = (input("Digite a temperatura em Fahrenheit: "))
     try:
@@ -142,6 +136,5 @@ def F_C():
         return F_C()
     Celsius = (graus - 32) * 5 / 9
     return print(f'{graus} Graus Fahrenheit em Celsius é: {Celsius} Graus Celsius.')
-
 
 calculadora()
